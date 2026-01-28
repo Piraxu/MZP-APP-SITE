@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MZP APP - Strona główna</title>
+    <link rel="icon" type="image/x-icon" href="res/img/logo.ico">
+    <link rel="stylesheet" href="style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BBH+Hegarty&family=Delicious+Handrawn&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jersey+10&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<script src="main.js"></script>
+</head>
+<body onload="slider1()">
+    <h2 style="display: none;" id="printjoke">Nie drukuj mojej strony. Nie ma to sensu i szkoda papieru <3</h2>
+<div id="navbar">
+    <img onclick="mainpage()" id="appicon" width="40" height="40" src="res/img/MZP.png">
+    <div onclick="mainpage()" class="navoption"><p>Strona główna</p></div>
+    <div onclick="dwlnd()" class="navoption"><p>Pobierz</p></div>
+    <div onclick="adds()" class="navoption"><p>Dodatki</p></div>
+</div>
+<div id="content">
+<div id="slider">
+  <div id="slider-bg"></div>
+  <h1 id="slider-text">Prosty Aktualizator</h1>
+</div>
+<div id="descheader"><h1>W kilku zdaniach o projekcie:</h1></div>
+<div id="flex-content-box">
+<div id="desc-text">
+    <h3>Cel "aplikacji":</h3>
+    <p><strong>MZP APP </strong>powstała z potrzeby przechowywania w <strong><a>jednym miejscu</a></strong> rozkładów jazdy wszystkich linii obsługiwanych przez Miejski Zakład Przewozów (aka. MZP)</p>
+    <h3>Jak korzysta się z "MZP APP" ?</h3>
+    <p><strong><a>Przed rozpoczęciem kursu </a></strong>wystarczy uruchomić "aplikację", wybrać linię i sprawdzić trasę razem z rozkładem jazdy w interesującym nas kierunku.</p>
+    <h3>Prosto i bez internetu:</h3>
+    <p><strong>Prócz aktualizacji </strong>aplikacja nie wymaga wcale połączenia z internetem, co jest jej dużym atutem. Oczywiście... bez internetu wygląda znacznie gorzej, ale akceptowalnie i dalej działa.</p>
+    <h3>Jak zainstalować aplikację ?</h3>
+    <p><strong>Aby zainstalować aplikacje </strong>z górnego menu przejdź na podstronę "Pobierz" na której znajdziesz instalator. Po jego uruchomieniu zwyczajnie przeklikaj wszystko i poczekaj na zakończenie instalacji. <strong><a>UWAGA! w systemie Windows 11 za sprawą włączonej funkcji "inteligentna kontrola aplikacji" instalator może się nie uruchomić. Należy ją wtedy wyłączyć.</a></strong></p>
+</div>
+<div class="whyworthcontainer">
+<div id="whyworth">
+    <h1>Nadal nie przekonany do pobrania? ... </h1>
+  <div id="handwritenpaper">
+      <h1>Dlaczego Warto ?</h1>
+    <ol>
+        <li>Pełne trasy każdej linii</li>
+        <li>Szybki i swobodny dostęp do rozkładów jazdy, także offline</li>
+        <li>Lepsze odczucia realizmu</li>
+        <li>Pełne doświadczenie pracy w v-firmie</li>
+        <li>Ponieważ ładnie prosimy <3</li>
+        <li class="link">ㅤㅤㅤㅤㅤ</li>
+        <li class="link">Jeśli już cię przekonałem, wybierz porządaną przez siebie wersję:</li>
+        <li class="link"><a href="res/app/MZP_APP_SETUP_V.1.5.1.exe">instalator .exe</a></li>
+        <li class="link"><a href="res/app/MZP_APP_V.1.5.1.zip">Pobierz aplikacje w paczce .zip</a></li>
+    </ol>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+
+<h1>‎ </h1>
+<footer>
+    <div id="social-links">
+        <a href="https://discord.com/invite/puYsQdeKEB"> <img title="Serwer discord" class="social-link" src="res/img/discord.png"></a> 
+        <a href="https://github.com/Piraxu/MZP-APP-Source"><img title="Repozytorium kodu źródłowego na stronie github" class="social-link" src="res/img/github.png"></a> 
+        <img title="Link do v-firmy w systemie SIL" class="social-link" src="res/img/sil.png">
+    </div>
+    <span>Oficjalna strona pobierania "MZP APP" | Piraxu 2026 r.</span>
+    
+</footer>
+</body>
+</html>
