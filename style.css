@@ -1,0 +1,279 @@
+
+
+
+body {
+    background-color: #13131a;
+    color:#d3d3d3;
+    margin: 0;
+    font-family: "Lato";
+    overflow-x: hidden;
+    position:relative;
+}
+
+#navbar {
+    background-color: #22222e;
+    position:sticky;
+    top:0;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    user-select: none;
+    border-bottom: 1.5px solid #121214;
+    z-index: 99;
+
+
+    
+    #appicon {
+padding-right: 1%;
+padding-left: 1%;
+    }
+
+    .navoption {
+        border-right: 2px solid #121214;
+        width: 150px;
+        text-align: center;
+        height: 100%;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .navoption:first-of-type {
+        border-left: 2px solid #121214;
+    }
+
+    .navoption:hover {
+        background-color: #072f66;
+        transition: all 500ms;
+        text-decoration: underline;
+    }
+}
+
+
+
+
+
+#slider {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  border-top: 1px solid #13131a;
+  display: flex;
+align-items: center;
+justify-content: center;
+border-bottom: 40px solid #13131a;
+}
+
+
+#slider-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("res/img/updater.png");
+  background-size: cover;
+  background-position: top;
+  opacity: 0.5;
+  z-index: 1;
+  animation: slideranim 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 5s;
+}
+
+
+#slider-text {
+  position: relative;
+  z-index: 2;
+ width: 100%;
+ font-family: "Inter";
+text-align: center;
+text-shadow: 2px 5px 0px #000000;
+font-size: 48px;
+text-transform: uppercase;
+  animation: slideranim 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 5s;
+
+}
+
+#descheader {
+    font-family: "BBH Hegarty";
+    width: 50%;
+    text-align: center;
+    border:5px dashed #084191;
+    margin:auto;
+    margin-bottom: 50px !important;
+    letter-spacing: 2px;
+}
+
+#flex-content-box {
+    display: flex;
+}
+
+#desc-text {
+       border:5px dashed #084191;
+       padding: 1%; 
+       width: 60%;
+       margin-left: 1% !important;
+       height: 20%;
+       font-family: "Inter";
+       box-shadow: 10px 5px 0px #414150 ;
+}
+
+#desc-text h1 {
+    font-size: 20px;
+}
+
+#desc-text p {
+    font-size: 17px;
+}
+
+.whyworthcontainer {
+    width: 30%;
+    height: 15%;
+    margin-left: 2%;
+    background-color: #18181d;
+    overflow: hidden;
+    padding: 1% 1%;
+    border-radius: 12px;
+     box-shadow: 10px 5px 0px #414150;
+     border: 3px solid #23262b;
+     user-select: none;
+}
+
+
+
+#whyworth {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#whyworth h1 {
+    font-family: "BBH Hegarty";
+    transform:translateX(1500px);
+    animation: slidein 3s ease forwards;
+    animation-delay: 3s;
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+
+
+#handwritenpaper {
+    background-image: url("res/img/paper-lined-texture.jpg");
+    background-repeat: no-repeat;
+    background-size:368px 521px ;
+    width: 25%;
+    color:#000000;
+    font-family: "Delicious Handrawn";
+    width: 368px;
+    height: 420px;
+    border-radius: 12px;
+    animation: paperslidein 1.5s ease forwards;
+    transform:translateX(1500px);
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+#handwritenpaper ol {
+    margin-left: 22px;
+    font-size: 24px;
+}
+
+#handwritenpaper .link {
+    list-style-type: none;
+    width: 100%;
+    margin:0;
+    text-decoration: underline;
+
+}
+
+#handwritenpaper a {
+    color:#000000;
+}
+
+#handwritenpaper a:visited {
+    color:#000000;
+}
+
+
+#handwritenpaper h1 {
+    text-align: center;
+    font-family: "Delicious Handrawn";
+    animation-duration: 0ms;
+}
+
+
+
+footer {
+    position:absolute;
+  background-color: #22222e;
+  width: 100%;
+  padding: 0.5%;
+  display: flex;
+  align-items: center;
+  gap: 63.5%;
+}
+
+#social-links {
+    display: flex;
+    gap: 5px;
+}
+
+.social-link {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* Animacje */
+
+@keyframes slideranim {
+    0% {filter: blur(10px);}
+    10% {filter: blur(10px);}
+    20% {filter: blur(0px);}
+    30% {filter: blur(0px);}
+    40% {filter: blur(0px);}
+    50% {filter: blur(0px);}
+    60% {filter: blur(0px);}
+    70% {filter: blur(0px);}
+    80% {filter: blur(0px);}
+    90% {filter: blur(5px);}
+    100% {filter: blur(10px);}
+}
+
+
+@keyframes slidein {
+    from {transform:translateX(1500px);}
+    to {transform:translateX(0px);}
+}
+
+@keyframes paperslidein {
+  0%   { transform: translateX(1500px) rotate(90deg); opacity: 0; }
+  10%  { transform: translateX(1000px) rotate(65deg); opacity: 0.5; }
+  25%  { transform: translateX(500px)  rotate(40deg); opacity: 0.8; }
+  40%  { transform: translateX(200px)  rotate(20deg); opacity: 0.9; }
+  60%  { transform: translateX(100px)  rotate(10deg); opacity: 1; }
+  80%  { transform: translateX(50px)   rotate(5deg);  }
+  100% { transform: translateX(0px)    rotate(0deg);  opacity: 1; }
+
+}
+
+
+@media print {
+    #navbar {
+        display: none;
+    }
+
+    #content {
+        display: none;
+    }
+
+    #printjoke {
+        display: block !important;
+        color:#000000;
+    }
+
+}
