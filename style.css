@@ -227,6 +227,59 @@ footer {
     height: 30px;
 }
 
+#files-list {
+    width: 55%;
+    background-color: #18181d;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 12px;
+     box-shadow: 10px 5px 0px #414150;
+     border: 3px solid #23262b;
+     padding: 0.5%;
+     height: 600px;
+     font-family: "Inter";
+}
+
+.filesectionheader {
+    border:5px dashed #084191;
+    padding: 0.5%;
+    text-align: center;
+    text-transform: uppercase;
+    width: 70%;
+    margin:auto;
+}
+
+.version-header {
+    color:#4581d4;
+    font-style: italic;
+}
+
+
+
+
+.small-desc {
+    font-style: italic;
+    font-size: 15px;
+}
+
+.app-version {
+    border-top: #d3d3d3 2px solid;
+    border-bottom: #d3d3d3 2px solid;
+    padding: 0.1%;
+}
+
+.download-links {
+    list-style: "🢂";
+}
+
+.download-links a {
+    color:#d3d3d3;
+}
+
+.download-links a:hover {
+    text-decoration: underline;
+}
+
 
 /* Animacje */
 
@@ -261,6 +314,11 @@ footer {
 
 }
 
+@keyframes newestversion {
+    from {text-shadow: #1b1b1b 0px 0px 0px;}
+    to {text-shadow: #a5a1a1 2px 2px 30px;}
+}
+
 
 @media print {
     #navbar {
@@ -274,6 +332,10 @@ footer {
     #printjoke {
         display: block !important;
         color:#000000;
+    }
+
+    footer {
+        display: none;
     }
 
 }
